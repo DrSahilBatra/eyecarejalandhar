@@ -20,6 +20,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css">
 
 
@@ -32,13 +34,10 @@
 	
 	body h2 , h1
 	{
-		font-family: "Playfair Display", Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+		font-family: 'Lexend Deca', sans-serif;
 	}
 
-	body
-	{
-		font-family: 'Libre Franklin', sans-serif;
-	}
+	
 
 	p{
 		font-size: 18px;
@@ -47,13 +46,35 @@
         font-style: normal;
         color: #6e7272;
 	}
+
+
+@media screen and (max-width: 800px)
+  {
+
+  	.brandname
+{
+	margin-left: 20px;
+  }
+
+  }
+
+  @media screen and (min-width: 800px)
+
+ 
+  {
+
+.brandname
+{
+	margin-left: 0px;
+  }
+}
 </style>
 
 </head>
 <body>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: white;color: black;border-style: none;">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: white;color: black;border-style: none;" id="home">
   <div class="container">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: black;" aria-label="mobile-navigation">
@@ -63,7 +84,7 @@
       </button>
       <div class="brandname">
       <h4 style="font-weight: 1000;
-	font-size: 20px;">Dr <span style="color: #002C43">Nalini</span> Saxena</h4>
+	font-size: 20px;">Dr <span style="color: #58BE5F">Nalini</span> Saxena</h4>
 	<h5>Eye Spicialist In Jalandhar</h5>
 </div>
     </div>
@@ -72,8 +93,8 @@
         <li ><a href="#home" style="color: black;margin-top: 10px; ">Home</a></li>
         <li><a href="#about" style="color: black;margin-top: 10px;">About</a></li>
         <li><a href="#services" style="color: black;margin-top: 10px; ">Services</a></li> 
-        <li><a href="#about" style="color: black;margin-top: 10px;">Location</a></li>
-        <li><a href="#services" style="color: black;margin-top: 10px;">Contact</a></li> 
+        <li><a href="#location" style="color: black;margin-top: 10px;">Location</a></li>
+        <li><a href="#contact" style="color: black;margin-top: 10px;">Contact</a></li> 
          
       </ul>
      
@@ -87,7 +108,7 @@
 	<div class="row"><br><br>
 		<div class="col-sm-6" style="margin-top: 100px;">
 
-			<h2 style="font-size: 50px;font-family: 'Playfair Display', serif;font-weight: bolder;color: #002C43;font-weight: 1200"> Better Eyesight for better life 
+			<h2 style="font-size: 50px;font-weight: bolder;color: #002C43;font-weight: 1200"> Better Eyesight for better life 
 			</h2>
 			<br>
 			
@@ -103,7 +124,7 @@
 
 		<div class="col-sm-6">
 
-			<img src="img/drnalinisaxena2.jpg" width="100%">
+			<img src="img/drnalinisaxena2.jpg" width="100%" style="margin-top: 70px;">
 			
 
 		</div>
@@ -120,7 +141,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-7">
-			<h1 style="font-weight: 1000; ">Dr Nalini Saxena - Eye Specialist in Jalandhar</h1>
+			<h1 style="font-weight: 1000; " id="about">Dr Nalini Saxena - Eye Specialist in Jalandhar</h1>
 <br><br>
 			<p>
 				Dr. Nalini Saxena specializes in Vitreo - Retinal Surgery and has been exclusively trained in different retinal surgeries. She has done her MS Ophthalmology from Maulana Azad Medical College which is one of the best medical institute of the country. To continue her interest in the retina, she further did a dedicated fellowship in vitreo-retinal Diseases  Management from Venu Eye Institute and Research Center, New Delhi. She has also passed the prestigious examination of the Royal College of Surgeons.
@@ -149,7 +170,7 @@ The power of healing is in the hands of god, but a doctor creates a pathway to b
 <br><br><br><br>
 
 
-<div style="background-color: #F8F8F8">
+<div style="background-color: #F8F8F8" id="contact">
 <div class="container" style="text-align: center;">
 	<br><br><br><br>
 <h2 style="color: #002C43;font-weight: 800;">Contact Us Today For A Consultation </h2>
@@ -166,7 +187,7 @@ The power of healing is in the hands of god, but a doctor creates a pathway to b
 <div class="container">
 	<br><br><br><br><br>
 	<div class="row">
-		<h2 style="font-weight: 800;color: #002C43; text-align: center;">Services We Provide</h2><br>
+		<h2 style="font-weight: 800;color: #002C43; text-align: center;" id="services">Services We Provide</h2><br>
 		<div class="col-sm-6" >
 	
 	   <ul style="font-family: 'Libre Franklin', sans-serif;">
@@ -224,7 +245,7 @@ The power of healing is in the hands of god, but a doctor creates a pathway to b
 
 
 
-<div >
+<div id="location">
 
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27268.34354129817!2d75.54110149241663!3d31.31637541198624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5af2e467dd43%3A0x19b51499bc01fdc3!2sTagore%20Hospital%20%26%20Heart%20Care%20Centre%20Private%20Limited!5e0!3m2!1sen!2sin!4v1568556374723!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	
