@@ -29,7 +29,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/38b0250b15.js"></script>
 
-
 <style type="">
 	
 	body h2 , h1
@@ -67,6 +66,44 @@
 {
 	margin-left: 0px;
   }
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 </style>
 
@@ -219,6 +256,64 @@ The power of healing is in the hands of god, but a doctor creates a pathway to b
 </div>
 
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      
+<h2 style="text-align: center;">FAQs </h2>
+
+
+<button class="accordion">How long do you need off work after laser eye surgery?</button>
+<div class="panel">
+  <p>Usually, you can start working the day after your laser, but you should avoid working for long hours on computer , night driving and travelling for 1 week.</p>
+</div>
+
+<button class="accordion">Can you drive after eye laser surgery?</button>
+<div class="panel">
+  <p>Yes, you can drive,but you should avoid driving at night for atleast 1 week</p>
+</div>
+
+<button class="accordion">How long does it take to recover from eye surgery?</button>
+<div class="panel">
+  <p>Complete healing usualy takes 4 weeks, but with advancement in technology and with small incision surgery, the healing occurs within 2 weeks</p>
+</div>
+<button class="accordion">Who Is Suitable For Laser Eye Surgery?</button>
+<div class="panel">
+  <p>Patient with age more than 21 years of age and has a stable number of glasses for atleast 1 year are suitable for laser surgery, however detailed examination will be done by your doctor and any contraindication will be communicated after investigations</p>
+</div>
+<button class="accordion">How long does it take to recover from retina surgery?</button>
+<div class="panel">
+  <p>Retinal surgeries are more complex than cataract or any refractive procedures, it usually takes 4-6 weeks for recovery or may take longer depending upon the case</p>
+</div>
+
+<button class="accordion">Can rubbing eyes cause retinal detachment?</button>
+<div class="panel">
+  <p>No. Retinal detachment usually occurs after trauma or post eye surgery</p>
+</div>
+
+<button class="accordion">How long does it take for the retina to reattach after retinal detachment surgery?
+
+</button>
+<div class="panel">
+  <p>Retinal attachment mostly occurs at the time of surgery, but visual recovery takes 4-6 weeks or may take longer if your doctor has put silicon oil in your eye as tamponade for retina</p>
+</div>
+
+<button class="accordion">How long does it take to recover from cataract surgery?</button>
+<div class="panel">
+  <p>Usual recovery after cataract surgery occurs within 3 weeks. But visual recovery is seen next day after surgery in most of the cases</p>
+</div>
+
+<button class="accordion">Are cataracts found only in older people?</button>
+<div class="panel">
+  <p>No. Cataract can occur in children which are mostly congenital or traumatic, it can also occur in young adults. The cause may be variable like trauma or any metabolic disease or side effects of any medication use for long time</p>
+</div>
+
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  
+</div>
 
 
 
@@ -251,5 +346,27 @@ The power of healing is in the hands of god, but a doctor creates a pathway to b
 <br><br><br>
 <p style="text-align: center;color: white;">All rights reserved.</p>
 </div>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 </html>
